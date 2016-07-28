@@ -6,6 +6,7 @@ This application is for managing library visitors using vistors phone number
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+
 ### Prerequisities
 <a href="https://www.python.org/downloads/">Python 3.5 or Higher running on your local system </a> <br>
 <a href="http://flask.pocoo.org/docs/0.11/installation/">Install Virual Enviorment</a>
@@ -77,3 +78,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Shah Shah - Chairman of Bhartiya Temple Troy Library 
 * Bharatiya Temple IT Team
+
+
+##Screenshot
+SignIn Page
+![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signin.png)
+SignUp Page
+![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signup.png)
+Admin Page
+![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/admin.png)
+
