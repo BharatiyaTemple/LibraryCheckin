@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% from 'macros.html' import render_field %}
+
+{% block content %}
+
+    <div id="headerimage" class="sixteen columns">
+
+  <img src= {{ url_for('static', filename = 'img/logo.png') }}>
+
+</div>
+
+<form method='POST' action=''>
+  {{ form.hidden_tag() }}
+  <div class="row">
+    <div class="u-full-width">
+      {{ render_field(form.phoneNumber) }}
+    </div>
+
+  <div class="u-full-width">
+    <input type="submit" class="button-primary" value="CheckIn">
+  </div>
+      </div>
+</form>
+
+{% endblock %}
