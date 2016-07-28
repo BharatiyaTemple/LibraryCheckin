@@ -28,7 +28,7 @@ sudo python3 checkin.py
 ```
 
 ## Deployment
-Open moddels.py
+Open models.py
 
 comment or remove
 ```
