@@ -1,6 +1,6 @@
 # Library Checkin  :books:
 
-This application is for managing library visitors using vistors phone number 
+This application allows library visitors to check in themselves so the front desk can focus on providing a warm and personal welcome.
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisities
 <a href="https://www.python.org/downloads/">Python 3.5 or Higher running on your local system </a> <br>
-<a href="http://flask.pocoo.org/docs/0.11/installation/">Install Virual Enviorment</a>
+<a href="http://flask.pocoo.org/docs/0.11/installation/">Install Virtual Enviorment</a>
 
 
 ### Installing
@@ -76,7 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Thanks
 
-* Shah Shah - Chairman of Bhartiya Temple Troy Library 
+* Shah Shah - Chairman of Bharatiya Temple Troy Library 
 * Bharatiya Temple IT Team
 
 
