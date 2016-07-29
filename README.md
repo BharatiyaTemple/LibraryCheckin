@@ -1,3 +1,9 @@
+
+<p align="center">
+  <img src="https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/static/img/logo.png" width="350"/>
+  
+</p>
+
 # Library Checkin  :books:
 
 This application allows library visitors to check in themselves so the front desk can focus on providing a warm and personal welcome.
@@ -81,10 +87,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 ##Screenshot
-SignIn Page
-![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signin.png)
-SignUp Page
-![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signup.png)
-Admin Page
-![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/admin.png)
+<p align="center">
+  SignIn Page
+  <img src="https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signin.png" width="350"/>
+  SignUp Page
+  <img src="https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signup.png" width="350"/>
+  Admin Page
+  <img src="https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/admin.png" width="350"/>
+</p>
+
 
