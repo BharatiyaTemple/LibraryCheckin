@@ -87,13 +87,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 ##Screenshot
-<p align="center">
+
   SignIn Page
-  <img src="https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signin.png" width="350"/>
+  ![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signin.png)
   SignUp Page
-  <img src="https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signup.png" width="350"/>
+  ![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/signup.png)
   Admin Page
-  <img src="https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/admin.png" width="350"/>
-</p>
+  ![ScreenShot](https://github.com/BharatiyaTemple/LibraryCheckin/blob/master/screenshots/admin.png)
+
 
 
