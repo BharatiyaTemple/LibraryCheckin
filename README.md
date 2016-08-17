@@ -49,7 +49,7 @@ uncomment AWS file and fillout the info from your AWS account
 ## Built With
 
 * Flask - A lightweight Python web framework
-* Peewee - Peewee is an open source object-relational mapper (ORM) for the Python 
+* Peewee - An open source object-relational mapper (ORM) for the Python 
 * Skeleton - Small collection of CSS files
 * HTML and CSS
 
