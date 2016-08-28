@@ -10,7 +10,7 @@ from peewee import *
 
 
 #to test locally use this
-DATABASE = SqliteDatabase('test.db', check_same_thread=False)
+DATABASE = SqliteDatabase('te2sdnjanft.db', check_same_thread=False)
 
 class User(UserMixin, Model):
     email = CharField(unique=True)
@@ -39,7 +39,6 @@ class Taco(Model):
     timestamp = DateTimeField(default=datetime.datetime.now)
     phoneNumber = TextField()
     fullName = TextField()
-    email = CharField(unique=True)
     member = TextField(null=True)
 
     class Meta:

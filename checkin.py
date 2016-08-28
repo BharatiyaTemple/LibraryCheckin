@@ -135,7 +135,6 @@ def new_taco():
         models.Taco.create(user=g.user._get_current_object(),
                            phoneNumber=form.phoneNumber.data,
                            fullName=form.fullName.data,
-                           email=form.email.data,
                            member=form.member.data)
 
         return redirect(url_for('signIn'))

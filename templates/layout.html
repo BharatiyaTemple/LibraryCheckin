@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Bhartiya Temple Library</title>
+    <title>Bharatiya Temple Library</title>
     <link rel="stylesheet" href="/static/css/normalize.css">
     <link rel="stylesheet" href="/static/css/skeleton.css">
     <link rel="stylesheet" href="/static/css/temple.css">
@@ -22,7 +22,7 @@
     {% endif %}
     {% endwith %}
 
-      <footer>
+
     <div class="container">
       <div class="row">
         <div class="u-full-width">
@@ -30,7 +30,7 @@
             {% if current_user.is_authenticated %}
 
                 <a href="{{ url_for('signIn') }}" class="" title="CheckIn">CheckIn</a>
-                <a href="{{ url_for('logout') }}" class="" title="CheckIn">Logout</a>
+                <a href="{{ url_for('logout') }}" class="" title="Logout">Logout</a>
             {% else %}
             {% endif %}
           </nav>
@@ -38,6 +38,7 @@
         </div>
       </div>
 
+        <footer>
       </footer>
     </div>
   </body>

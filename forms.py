@@ -10,8 +10,6 @@ def email_exists(Form, field):
     if User.select().where(User.email == field.data).exists():
         raise ValidationError('User with that email already exists.')
 
-def make_optional(Form,field):
-    field.validators.insert(0, Optional())
 
 class RegisterForm(Form):
     email = StringField(
@@ -39,16 +37,12 @@ class LoginForm(Form):
 
 
 class SigninForm(Form):
-    phoneNumber = StringField('Enter Your Phone Number', [DataRequired(), Length(min=10)])
+    phoneNumber = StringField('Enter Your 10 Digit Phone Number', [DataRequired(), Length(min=10)])
 
 class TacoForm(Form):
     fullName = StringField('Full Name', validators=[DataRequired()])
-    phoneNumber = StringField('Phone Number', validators=[DataRequired()])
-    email = StringField('Email', validators=[Optional()])
-
+    phoneNumber = StringField('10 Digit Phone Number', validators=[DataRequired()])
     member = RadioField(
         'Are you a Temple Member?',
         choices=[('yes', 'Yes'), ('no', 'No')], default='no'
     )
-
-
