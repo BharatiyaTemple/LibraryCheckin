@@ -18,6 +18,8 @@ class MyModelView(ModelView):
 
 
 
+
+
 DEBUG = True
 PORT = 8000
 HOST = '0.0.0.0'
@@ -31,7 +33,8 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-
+counter = 0
+newcounter = 0
 @login_manager.user_loader
 def load_user(userid):
     try:
@@ -56,9 +59,12 @@ def after_request(response):
 @app.route('/')
 @login_required
 def index():
-    tacos = models.Taco.select()
-    checks = models.Check.select()
-    return render_template('index.html', tacos=tacos)
+    flash("people checked in")
+    flash(counter)
+    flash("new people regisetered")
+    flash(newcounter)
+
+    return render_template('index.html')
 
 
 @app.route('/login', methods=('GET', 'POST'))
@@ -92,16 +98,15 @@ def signIn():
             models.Taco.phoneNumber ** form.phoneNumber.data).get()
 
 
-
-
             flash("Welcome to Temple Library", "Success")
-
+            global  counter
+            counter += 1
             return redirect(url_for('signIn'))
 
 
 
         except models.DoesNotExist:
-            flash("We cant find you on System, Please fill out this form or Press Check In")
+            flash("We can't find you on System, Please fill out this form")
             return redirect(url_for('new_taco'))
     return render_template('signin.html',form=form)
 
@@ -127,7 +132,6 @@ def register():
 
 
 @app.route('/signup', methods=('GET', 'POST'))
-@login_required
 def new_taco():
     form = forms.TacoForm()
     if form.validate_on_submit():
@@ -136,7 +140,8 @@ def new_taco():
                            phoneNumber=form.phoneNumber.data,
                            fullName=form.fullName.data,
                            member=form.member.data)
-
+        global newcounter
+        newcounter += 1
         return redirect(url_for('signIn'))
     return render_template('signup.html', form=form)
 
